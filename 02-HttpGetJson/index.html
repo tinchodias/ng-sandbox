@@ -13,8 +13,8 @@
     <li ng-repeat="product in store.products | filter:store.query ">
       <h2 ng-bind="product.title"></h2>
       <img ng-src="img/{{product.imageUrl}}"></img>
-      <span ng-bind="product.price"></span>
-      <span ng-bind="product.description"></span>
+      <p>$</p><span ng-bind="product.price"></span>
+      <p ng-bind="product.description"></p>
     </li>
   </ul>
 </div>
