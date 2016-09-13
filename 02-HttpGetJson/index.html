@@ -19,9 +19,13 @@
 var app = angular.module("myApp", []);
 
   app.controller('SearchCtrl', ['$http', function($http) {
-    $http.get('posts.json').success(function(data) {
-      this.posts = data.posts;
-    });
+    $http.get('/posts.json').then(
+        function(data) {
+            this.posts = data.posts;
+        },
+        function(error) {
+            console.log(error);
+        });
     
     this.posts = [];
   }]);
