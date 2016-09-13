@@ -19,7 +19,7 @@
 var app = angular.module("myApp", []);
 
   app.controller('SearchCtrl', ['$http', function($http) {
-    $http.get('/02-HttpGetJson/posts.json').then(
+    $http.get('posts.json').then(
         function(data) {
             this.posts = data.posts;
             console.log(data);
@@ -29,6 +29,7 @@ var app = angular.module("myApp", []);
         });
     
     this.posts = [];
+    this.query = "";
   }]);
 </script>
 
