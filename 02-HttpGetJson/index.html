@@ -6,8 +6,9 @@
 <body ng-app="myApp">
 
 <div class="posts" ng-controller="SearchCtrl as srchCtrl">
+  <input type="search" class="search" ng-model="srchCtrl.query">
   <ul>
-    <li ng-repeat="post in srchCtrl.posts">
+    <li ng-repeat="post in srchCtrl.posts | filter:srchCtrl.query ">
       <date ng-bind="post.date"></date>
       <a ng-href="{{post.url}}" ng-bind="post.title"></a>
     </li>
