@@ -9,7 +9,7 @@
   <ul>
     <li ng-repeat="post in srchCtrl.posts">
       <date ng-bind="post.date"></date>
-      <a ng-href="post.url" ng-bind="post.title"></a>
+      <a ng-href="{{post.url}}" ng-bind="post.title"></a>
     </li>
   </ul>
 </div>
