@@ -1,0 +1,9 @@
+<div ng-controller="DetailController as detail"  style="margin:70px">
+	<a href="#/products">Back to Products</a>
+	<h2>
+      <span ng-bind="detail.product.title"></span>
+    </h2>
+    <img ng-src="img/{{detail.product.imageUrl}}"></img>
+    <p>$ <span ng-bind="detail.product.price"></span></p>
+    <p ng-bind="detail.product.description"></p>
+</div>

@@ -1,0 +1,12 @@
+<div ng-controller="ListController as store">
+  Search: <input type="search" ng-model="store.query">
+  
+  <div style="margin:70px" ng-repeat="product in store.products | filter:store.query ">
+	<a ng-href="#/products/{{product.id}}">
+		<p ng-bind="product.title"></p>
+		<img ng-src="img/{{product.imageUrl}}"></img>
+	</a>
+	<p>$ <span ng-bind="product.price"></span></p>
+  </div>
+
+</div>
