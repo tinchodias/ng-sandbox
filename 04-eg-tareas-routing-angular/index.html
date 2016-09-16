@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" ng-app="tareasListApp">
+
+<head>
+  <meta charset="utf-8">
+  <title>Tareas - Routing</title>
+  <link rel="stylesheet" href="css/app.css"/>
+
+  <!-- JQUERY -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <!-- ANGULAR  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular-animate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular-route.min.js"></script>
+
+  <!-- UNDERSCORE -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+  <div class="page-header">
+    <h1>
+      Tareas - Routing
+      <small>AngularJS</small>
+    </h1>
+  </div>
+
+  <div class="well-lg">
+    <div ui-view></div>
+  </div>
+
+</div>
+
+<!-- nuestra aplicacion js -->
+<script src="js/app.js"></script>
+<script src="js/routes.js"></script>
+<script src="js/tareas_service.js"></script>
+<script src="js/tarea.js"></script>
+
+</body>
+</html>
+
