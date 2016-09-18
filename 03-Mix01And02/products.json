@@ -1,27 +1,27 @@
 [
   {
-    "id": 0,
+    "id": "musculosa_duo",
     "title": "Musculosa dúo",
     "description": "Musculosa crepe con botón en espalda + Top calado de hilo negro.",
     "price": "300",
     "imageUrl": "musculosa_duo_frente.jpg"
   },
   {
-    "id": 1,
+    "id": "pantalon_dulce_de_leche",
     "title": "Pantalón dulce de leche",
     "description": "Pantalón de lino con bolsillos delanteros + cinto estampado de regalo.",
     "price": "400",
     "imageUrl": "pantalon_dulce_de_leche_completo_frente.jpg"
   },
   {
-    "id": 2,
+    "id": "sweater_oveja",
     "title": "Sweater oveja",
     "description": "Sweater tejido a mano con oveja en relieve bordada.",
     "price": "600",
     "imageUrl": "sweater_oveja.jpg"
   },
   {
-    "id": 3,
+    "id": "sweater_paisaje",
     "title": "Sweater paisaje",
     "description": "Sweater de paisajes discontinuos.",
     "price": "600",
