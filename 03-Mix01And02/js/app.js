@@ -1,5 +1,14 @@
 var app = angular.module("storeApp", ["ngRoute"]);
 
+app.service("productsService", ['$http', function ($http) {
+
+  this.allProducts = function () {
+    return $http.get('data/products.json', { cache: true });
+  };
+
+}]);
+
+
 app.config(function($routeProvider) {
   $routeProvider
   .when("/products", {
@@ -13,24 +22,26 @@ app.config(function($routeProvider) {
   });
 });
 
-app.controller('ListController', ['$http', function($http) {
+app.controller('ListController', ['productsService', function(productsService) {
   var store = this;
   store.products = [];
 
-  $http.get('data/products.json').success(function(data) {
-    store.products = data;
-  });
+  productsService.allProducts().success(function(products) {
+    store.products = products;
+  }); 
+
 }]);
 
-app.controller('DetailController', ['$http', '$routeParams', function($http, $routeParams) {
+app.controller('DetailController', ['productsService', '$routeParams', function(productsService, $routeParams) {
   var detail = this;
   detail.product = {};
 
-  $http.get('data/products.json').success(function(data) {
-    detail.product = data.find(function(product) {
+  productsService.allProducts().success(function(products) {
+    detail.product = products.find(function(product) {
       return product.id == $routeParams.productId;
     });
   });
+
 }]);
 
 
