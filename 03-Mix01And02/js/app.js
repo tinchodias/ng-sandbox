@@ -12,10 +12,10 @@ app.service("productsService", ['$http', function ($http) {
 app.config(function($routeProvider) {
   $routeProvider
   .when("/products", {
-      templateUrl : "partials/products.html"
+      templateUrl : "views/products.html"
   })
   .when("/products/:productId", {
-      templateUrl : "partials/product.html"
+      templateUrl : "views/product.html"
   })
   .otherwise({
       redirectTo: '/products'
