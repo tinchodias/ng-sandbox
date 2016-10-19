@@ -13,8 +13,8 @@ tareasListApp.service("TareasService", function () {
     this.tareas.push(tarea);
   };
 
-  this.getTareaById = function (id) {
-    return _.find(this.tareas, function (tarea) {
+  this.getTareaById = function (id) {    
+    return this.tareas.find(function (tarea) {
       return tarea.id == id;
     })
   };
