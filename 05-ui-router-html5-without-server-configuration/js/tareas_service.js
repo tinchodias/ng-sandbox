@@ -14,7 +14,6 @@ tareasListApp.service("TareasService", function () {
   };
 
   this.getTareaById = function (id) {
-    
     return this.tareas.find(function (tarea) {
       return tarea.id == id;
     })
