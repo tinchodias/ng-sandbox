@@ -1,7 +1,11 @@
 'use strict';
 
+console.log("punto 1")
+
 /* Controllers */
 var tareasListApp = angular.module('tareasListApp', ['ui.router']);
+
+console.log("punto 2")
 
 tareasListApp.controller('AgregarTareaController', function (TareasService) {
 
@@ -16,6 +20,7 @@ tareasListApp.controller('AgregarTareaController', function (TareasService) {
 
 });
 
+console.log("punto 3")
 
 tareasListApp.controller('EditarTareaController', function ($stateParams, $state, TareasService) {
 
@@ -36,4 +41,6 @@ tareasListApp.controller('EditarTareaController', function ($stateParams, $state
 });
 
   
+  console.log("punto 4")
+
   
