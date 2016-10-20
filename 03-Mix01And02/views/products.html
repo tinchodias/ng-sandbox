@@ -7,9 +7,9 @@
 			<td><img ng-src="img/tiny/{{product.imageUrl}}"></img></td>
 			<td>
 				<a ng-href="#/products/{{product.id}}">
-					<p ng-bind="product.title"></p>
-					<p>$ <span ng-bind="product.price"></span></p>
+					<span ng-bind="product.title"></span>
 				</a>
+				<p>$ <span ng-bind="product.price"></span></p>
 			</td>
 		</tr>
 	</tbody>
